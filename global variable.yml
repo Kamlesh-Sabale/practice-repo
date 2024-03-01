@@ -1,0 +1,14 @@
+---
+- name: playbook for global variables
+  hosts: all
+  vars:
+      URL1: "www.kamleshsabale.com"
+      URL2: "www.kamlesh.com"
+  tasks:
+    - name: 1st global variables
+      debug:
+        msg: "{{URL1}}"
+    - name: 2nd global variable
+      debug:
+        msg: "{{URL2}}"
+...                
