@@ -1,0 +1,12 @@
+---
+- name: get user input and execute command
+  hosts: all
+
+  vars_prompt:
+    - name: user_input
+      prompt: "Enter a value"
+
+  tasks:
+    - name: Run command with user input
+      command: "echo {{user_input}}"
+...
