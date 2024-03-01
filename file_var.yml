@@ -3,7 +3,7 @@
   hosts: all
   vars_files: office.yml
   tasks:
-    - name: first task example for fle variable
+    - name: first task example for file variable
       debug:
         msg: "{{URL}}"
 ...
