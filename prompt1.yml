@@ -1,0 +1,18 @@
+---
+- name: my first palybook
+  hosts: your_target_hosts
+  become: true
+
+  tasks:
+    - name: ensure a package is installed
+    apt:
+      name: ensure a package is installed
+      apt:
+        name: your_package_name
+        state: present
+
+    - name: ensure a service is running 
+      services:
+        name: your_service_name
+        state: started
+            
